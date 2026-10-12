@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Type early, type often: why a fast wrong guess beats a slow right one</title>
+<meta name="description" content="In Draw and Guess, a drawing game online that a group can play with friends, a wrong guess costs nothing and a right guess loses value with every second th">
+<link rel="canonical" href="https://fair-trivia-dp9li3mjrb5w.edgeone.dev/type-early-type-often-why-a-fast-wrong-guess-beats-a-slow-right-one/">
+<style>body{max-width:44rem;margin:2rem auto;padding:0 1rem;font:17px/1.65 -apple-system,Segoe UI,Roboto,sans-serif;color:#222;background:#fff}a{color:#0b5cad}h1{font-size:1.75rem;line-height:1.25}h2{font-size:1.25rem;margin-top:2rem}table{border-collapse:collapse;margin:1rem 0}td,th{border:1px solid #ccc;padding:.3rem .5rem;text-align:left}header,footer{font-size:.9rem;color:#666}code{background:#f3f3f3;padding:0 .2rem}</style>
+</head>
+<body>
+<header><a href="/">Fair Trivia</a> &middot; by Ahmed Moaz &middot; <a href="/about/">About</a></header>
+<main>
+<article>
+<h1>Type early, type often: why a fast wrong guess beats a slow right one</h1>
+<p><small>Ahmed Moaz &middot; 12 October 2026</small></p>
+<p>In Draw and Guess, a drawing game online that a group can play with friends, a wrong guess costs nothing and a right guess loses value with every second that passes. At the default 80-second drawing clock, each second is worth five points. So the player who types a rough guess in the first ten seconds is usually ahead of the player who waits until they are sure. This drawing and guessing game rewards speed, and the arithmetic below shows how much.</p>
+<h2>How points are scored: what a second is worth</h2>
+<p>A correct guess starts from 100 points and grows toward 500 the more of the drawing clock is left. The game rounds to the nearest five. On the default 80 seconds the formula is simple: 100 plus five points for each second still on the clock.</p>
+<ul><li>70 seconds left: 450 points</li><li>40 seconds left: 300 points</li><li>20 seconds left: 200 points</li><li>0 seconds left: 100 points</li></ul>
+<p>The host can shorten or lengthen the clock, and the scale stretches to fit. A guess with half the time left is worth 300 on any of them.</p>
+<h2>The order cut makes it worse</h2>
+<p>Speed is only half of it. Each correct guess is multiplied by a share that depends on how many players got there first. The first guesser keeps all of it. The second keeps a little over half, the third about two fifths, and nobody falls below a fifth.</p>
+<p>The table below was recomputed from the game's own scoring code for an 80-second drawing. Read across a row: it shows what the same moment is worth if you are first, second or third to get it right.</p>
+<table><thead><tr><th>Seconds left</th><th>First</th><th>Second</th><th>Third</th></tr></thead><tbody><tr><td>70</td><td>450</td><td>250</td><td>175</td></tr><tr><td>50</td><td>350</td><td>195</td><td>135</td></tr><tr><td>30</td><td>250</td><td>140</td><td>95</td></tr><tr><td>10</td><td>150</td><td>85</td><td>60</td></tr></tbody></table>
+<p>Look at the 70-second row against the 30-second row. A player who is first at 70 seconds left takes 450. A player who waits until 30 seconds left to be sure, and is third in line by then, takes 95. Waiting to be certain cost them 355 points.</p>
+<h2>Why the wrong guess is free</h2>
+<p>Nothing in the scoring subtracts for a miss, so typing "dog" for a fox costs you nothing. The game does set limits so that nobody floods the chat: each player gets 60 lines per drawing, and a short rate limit stops a burst of 30 lines inside ten seconds. Neither limit matters at normal typing speed.</p>
+<p>A few details help you type faster and with less worry:</p>
+<ul><li>Case, accents and hyphens do not matter. Two words run together still count.</li><li>The word inside a longer line counts too. "Is it a fox?" scores as a right answer, because the whole word is in it.</li><li>If you are one letter away, only you hear about it. The table does not see that notice.</li><li>Any other wrong guess appears for the whole table. That is useful to the drawer, who can see how the table is reading the picture, and it costs you nothing.</li></ul>
+<h2>What your guess does for the drawer's points</h2>
+<p>The drawer is paid from the same speeds. Take every right answer's speed points before the order cut, total them, and share that total across the other players. Anyone who missed counts as zero.</p>
+<p>Say four people sit at the table. Three guessers get it with 62, 40 and 25 seconds left. Their speed points are 410, 300 and 225. The total is 935, and divided by the three other players that is 311.67, which rounds to 310 for the drawer.</p>
+<p>The guessers take 410, then 165, then 85 once the order cut is applied. So the drawer comes out below the fastest guesser and well above the slowest. If you type early, you help the drawer too. A drawing that nobody reads pays the drawer nothing at all.</p>
+<h2>A habit for guessing faster</h2>
+<p>Type your guesses as soon as a stroke gives you something, starting with the first plausible word. Watch what other guessers type, since those lines tell you what the picture is not. Use the letter count. When hints arrive, test words that fit them. If the picture is still unclear, a broad word such as "animal" or "food" costs nothing and shows the drawer what the table is seeing.</p>
+<p>Keep one limit in mind. A wrong guess goes to the whole table, so it can help a rival as much as it helps the drawer. The numbers above assume a table that is racing.</p>
+<p>Next time you play, try one rule for a single round: type something within ten seconds of the first stroke, however unsure you are. Then check how your score compares with the table's.</p>
+<p><em>Ahmed Moaz builds Boardit, a free browser game site. Drafted and reviewed with AI help; facts checked against the game's code.</em></p>
+</article>
+</main>
+<footer><p>Written by Ahmed Moaz.</p></footer>
+</body>
+</html>
