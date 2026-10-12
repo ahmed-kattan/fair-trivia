@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guessing at a big table: when to wait and when to shout</title>
+<meta name="description" content="At a big table, shout early. A correct guess in Draw and Guess scores by speed and by place, and place falls away fast: the sixth player to get it, and eve">
+<link rel="canonical" href="https://fair-trivia-dp9li3mjrb5w.edgeone.dev/guessing-at-a-big-table-when-to-wait-and-when-to-shout/">
+<style>body{max-width:44rem;margin:2rem auto;padding:0 1rem;font:17px/1.65 -apple-system,Segoe UI,Roboto,sans-serif;color:#222;background:#fff}a{color:#0b5cad}h1{font-size:1.75rem;line-height:1.25}h2{font-size:1.25rem;margin-top:2rem}table{border-collapse:collapse;margin:1rem 0}td,th{border:1px solid #ccc;padding:.3rem .5rem;text-align:left}header,footer{font-size:.9rem;color:#666}code{background:#f3f3f3;padding:0 .2rem}</style>
+</head>
+<body>
+<header><a href="/">Fair Trivia</a> &middot; by Ahmed Moaz &middot; <a href="/about/">About</a></header>
+<main>
+<article>
+<h1>Guessing at a big table: when to wait and when to shout</h1>
+<p><small>Ahmed Moaz &middot; 13 October 2026</small></p>
+<p>At a big table, shout early. A correct guess in Draw and Guess scores by speed and by place, and place falls away fast: the sixth player to get it, and everyone after, keeps only 20 percent of their speed points. Waiting only makes sense for the hint letters, and only when you have no idea. The rest of this piece shows the arithmetic and a rule you can use.</p>
+<h2>What a guess is worth</h2>
+<p>Every right answer starts with speed points: 100, plus up to 400 for the fraction of the drawtime remaining, rounded to a multiple of five. Then the guess is scaled by an order share that shrinks as people get there first: 1 ÷ (1 + 0.8 × players ahead of you). The share never drops below 20%.</p>
+<p>Worked example, not a played game: imagine an 80-second drawing and eleven guessers, with the first six right answers landing like this.</p>
+<table><thead><tr><th>Place</th><th>Seconds left</th><th>Speed points</th><th>Order share</th><th>Points</th></tr></thead><tbody><tr><td>1st</td><td>70</td><td>450</td><td>100%</td><td>450</td></tr><tr><td>2nd</td><td>65</td><td>425</td><td>56%</td><td>235</td></tr><tr><td>3rd</td><td>60</td><td>400</td><td>38%</td><td>155</td></tr><tr><td>4th</td><td>50</td><td>350</td><td>29%</td><td>105</td></tr><tr><td>5th</td><td>45</td><td>325</td><td>24%</td><td>75</td></tr><tr><td>6th</td><td>40</td><td>300</td><td>20%</td><td>60</td></tr></tbody></table>
+<p>The sixth guess is at the floor, and so is every guess after it. The drawer's pay comes from the speed points, before the order cut, spread over the other players. If five more players guessed at 30, 25, 20, 15 and 10 seconds left, the drawer would be paid 295.</p>
+<p>The drawer's pay has a second effect. It is a sum of speed points over the other players, and players who never guess count as zero. Five fast readers at 450 each pay the drawer 2,250 ÷ 11, about 205, when eleven other players are at the table. Eleven slower readers at 300 each pay 3,300 ÷ 11, which is 300. For the drawer, breadth beats speed, and a plain drawing that everyone can read is worth more than a clever one that five people get.</p>
+<h2>Place beats seconds</h2>
+<p>Compare two players. One guesses first with only 20 seconds left and scores 200. Another guesses sixth with 70 seconds left and scores 90. Being early in the queue is worth more than being early on the clock, once the queue is long.</p>
+<p>Place and clock still trade against each other near the top. Second at 70 seconds scores 250, and first at 27 seconds scores 235. So a second place with time left is about a late first place. At a big table you are mostly racing to be in the first five, not racing the whole clock.</p>
+<h2>Is a wrong guess free?</h2>
+<p>It costs no points. A wrong guess is posted to the whole table, and a near-miss one letter away also sends you a private "close". A line that contains the whole word counts as right, accents and hyphens are ignored, and a two-word answer run together still counts. So "is it ...?" with the right word in it is a right guess, and a rushed sentence scores the same as a clean one.</p>
+<p>There are two costs. You can send at most 60 guesses in a turn, and everyone reads your wrong guess, so a good near-miss helps the rivals one step behind you.</p>
+<h2>When to wait: the hint clock</h2>
+<p>With the default 80 seconds and two hints, the first hint letter appears at 53 seconds left and the second at 27. A guess at the first hint would score 365 speed points, and at the second 235. Waiting from 70 seconds to the first hint therefore costs 85 speed points before the order cut, and waiting for the second costs 215.</p>
+<p>That puts the rule in one line. If you know the answer, send it now. If you do not, keep sending guesses, because they are free, and let the hints narrow the field. Never sit on a right answer waiting for company: the order share punishes the late.</p>
+<h2>A rule for the big table</h2>
+<ul><li>Guess early: send your likeliest guess in the first ten seconds, even if you are unsure.</li><li>After the first hint letter, drop every guess that does not fit it.</li><li>Once you have guessed, stay quiet about the word. Your chat then goes only to the drawer and the other right guessers, and a line that gives the word away is refused.</li><li>Read the wrong guesses in the chat. A rival's miss tells you what the drawing is not.</li></ul>
+<h2>Try it with a full table</h2>
+<p>The numbers above are read from the scoring code of <a href="https://playboardit.com/play/draw-and-guess">Boardit's Draw and Guess</a>, which I build, so you can check them against a real table.</p>
+<p>Next time you play an online drawing game with friends at a big table, write down the first five guess times of one turn and compare the places with the table above.</p>
+<p><em>By Ahmed Moaz, who builds Boardit. Drafted and reviewed with AI help; the game's own code was the source for the facts.</em></p>
+</article>
+</main>
+<footer><p>Written by Ahmed Moaz.</p></footer>
+</body>
+</html>
