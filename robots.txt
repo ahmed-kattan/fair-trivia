@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://fair-trivia-dp9li3mjrb5w.edgeone.dev/sitemap.xml
+Sitemap: https://ahmed-kattan.github.io/fair-trivia/sitemap.xml

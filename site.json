@@ -2,8 +2,8 @@
  "title": "Fair Trivia",
  "short": "Fair Trivia",
  "description": "How to write and check trivia questions that are fair to everyone at the table: sourcing, difficulty and bias. Notes by Ahmed Moaz.",
- "canonical_base": "https://fair-trivia-dp9li3mjrb5w.edgeone.dev/",
- "base": "/",
+ "canonical_base": "https://ahmed-kattan.github.io/fair-trivia/",
+ "base": "/fair-trivia/",
  "blurb": "A trivia question is only fun if it is fair: checkable, unambiguous and not secretly about one country or one generation. These notes are about sourcing answers, judging difficulty and spotting the quiet biases in a quiz.",
  "footer": "Written by Ahmed Moaz.",
  "about": [
