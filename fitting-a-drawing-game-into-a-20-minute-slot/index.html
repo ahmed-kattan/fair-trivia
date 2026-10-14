@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fitting a drawing game into a 20-minute slot</title>
+<meta name="description" content="A drawing game online fits a 20-minute slot if you plan from the clock instead of from the default. Draw and Guess lists about 20 minutes for a table of si">
+<link rel="canonical" href="https://ahmed-kattan.github.io/fair-trivia/fitting-a-drawing-game-into-a-20-minute-slot/">
+<style>body{max-width:44rem;margin:2rem auto;padding:0 1rem;font:17px/1.65 -apple-system,Segoe UI,Roboto,sans-serif;color:#222;background:#fff}a{color:#0b5cad}h1{font-size:1.75rem;line-height:1.25}h2{font-size:1.25rem;margin-top:2rem}table{border-collapse:collapse;margin:1rem 0}td,th{border:1px solid #ccc;padding:.3rem .5rem;text-align:left}header,footer{font-size:.9rem;color:#666}code{background:#f3f3f3;padding:0 .2rem}</style>
+</head>
+<body>
+<header><a href="/fair-trivia/">Fair Trivia</a> &middot; by Ahmed Moaz &middot; <a href="/fair-trivia/about/">About</a></header>
+<main>
+<article>
+<h1>Fitting a drawing game into a 20-minute slot</h1>
+<p><small>Ahmed Moaz &middot; 14 October 2026</small></p>
+<p>A drawing game online fits a 20-minute slot if you plan from the clock instead of from the default. Draw and Guess lists about 20 minutes for a table of six, but that figure assumes most turns end early. Budget on the worst case instead: each turn takes at most 18 seconds plus the drawing time. Pick the number of players, rounds and seconds so that the worst case stays at 13 minutes or less, and the other seven minutes cover joining and rules.</p>
+<h2>What one turn costs at most</h2>
+<p>A turn has three timed parts. The drawer gets 12 seconds to choose, and if they do not, the game chooses. Then the drawing clock runs. Then the result holds for 6 seconds before the pencil moves on. Four drawing times are on offer: 40, 60, 80 and 120 seconds.</p>
+<p>That makes a turn at most 58 seconds on a 40-second clock, 78 on 60, 98 on the 80-second default and 138 on 120.</p>
+<p>A turn usually ends sooner, because it stops as soon as everyone has guessed. But a plan for a fixed slot should not count on that.</p>
+<h2>How many players fit</h2>
+<p>A game has one turn per player per round. So the longest it can run, in minutes, is players times rounds times the turn length, divided by 60. Here are the results for the two shortest clocks and the two shortest round counts the host can set. The minutes are arithmetic of mine, taken from the code's clocks, so treat them as ceilings.</p>
+<table><thead><tr><th>Players</th><th>2 rounds, 40 s</th><th>2 rounds, 60 s</th><th>3 rounds, 40 s</th><th>3 rounds, 60 s</th></tr></thead><tbody><tr><td>3</td><td>5.8</td><td>7.8</td><td>8.7</td><td>11.7</td></tr><tr><td>4</td><td>7.7</td><td>10.4</td><td>11.6</td><td>15.6</td></tr><tr><td>5</td><td>9.7</td><td>13.0</td><td>14.5</td><td>19.5</td></tr><tr><td>6</td><td>11.6</td><td>15.6</td><td>17.4</td><td>23.4</td></tr><tr><td>8</td><td>15.5</td><td>20.8</td><td>23.2</td><td>31.2</td></tr></tbody></table>
+<p>At 13 minutes or less, four players fit on any of the first three settings, and five fit on both two-round settings. Six players fit only at two rounds of 40 seconds. The default of three rounds at 80 seconds is 29.4 minutes for six players if every turn runs to its limit, which is why the game's own estimate of about 20 depends on early finishes.</p>
+<p>You choose all four of these settings in the lobby, which you reach from <a href="https://playboardit.com/play/draw-and-guess">playboardit.com/play/draw-and-guess</a>.</p>
+<h2>How long does Draw and Guess take?</h2>
+<p>About 20 minutes for six players on the default settings of three rounds at 80 seconds, according to the game's own listing. That estimate depends on turns ending early once everybody has guessed. If the slot has a hard stop, shorten the clock or the rounds instead of trusting the average.</p>
+<h2>Joining is the part nobody counts</h2>
+<p>The four minutes before the first drawing are easy to lose. Someone is late, someone cannot find the link. The lobby stays open meanwhile: a lobby that nobody touches for 10 minutes packs itself up, so a long wait for a latecomer is a risk as well as a nuisance. I would give a lunch break with friends a hard rule: start at the four-minute mark with whoever is there.</p>
+<h2>A table of eight in a 20-minute slot</h2>
+<p>Eight players on two rounds of 40 seconds is 15.5 minutes at the ceiling. That leaves four and a half minutes for everything else, which is tight. Two rooms of four players each on two rounds of 60 seconds is 10.4 minutes at the ceiling. Both rooms run together, and nobody sits through seven other people's turns. The cost is that you lose one shared scoreboard.</p>
+<h2>A run of show for 20 minutes</h2>
+<p>For five players on two rounds of 60 seconds:</p>
+<ol><li>Minutes 0 to 4: players join, the host sets 60 seconds, two rounds and the number of words offered.</li><li>Minute 4 to 5: one sentence of rules. The drawer draws, everyone else types guesses, and faster guesses score more.</li><li>Minutes 5 to 18: play. The ceiling is 13 minutes, and a real game will often end earlier.</li><li>Minutes 18 to 20: read the scores and decide whether anyone wants a rematch.</li></ol>
+<p>The formula to take away is players times rounds times (drawing seconds plus 18), divided by 60. If the answer is more than 13, take away a round or 20 seconds of clock.</p>
+<p><em>By Ahmed Moaz, who builds Boardit.</em></p>
+</article>
+</main>
+<footer><p>Written by Ahmed Moaz.</p></footer>
+</body>
+</html>
