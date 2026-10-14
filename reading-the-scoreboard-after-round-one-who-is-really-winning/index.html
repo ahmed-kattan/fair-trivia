@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reading the scoreboard after round one: who is really winning?</title>
+<meta name="description" content="The player on top after round one is not always the strongest player. In Draw and Guess, as in any online drawing game with friends that pays the drawer, o">
+<link rel="canonical" href="https://ahmed-kattan.github.io/fair-trivia/reading-the-scoreboard-after-round-one-who-is-really-winning/">
+<style>body{max-width:44rem;margin:2rem auto;padding:0 1rem;font:17px/1.65 -apple-system,Segoe UI,Roboto,sans-serif;color:#222;background:#fff}a{color:#0b5cad}h1{font-size:1.75rem;line-height:1.25}h2{font-size:1.25rem;margin-top:2rem}table{border-collapse:collapse;margin:1rem 0}td,th{border:1px solid #ccc;padding:.3rem .5rem;text-align:left}header,footer{font-size:.9rem;color:#666}code{background:#f3f3f3;padding:0 .2rem}</style>
+</head>
+<body>
+<header><a href="/fair-trivia/">Fair Trivia</a> &middot; by Ahmed Moaz &middot; <a href="/fair-trivia/about/">About</a></header>
+<main>
+<article>
+<h1>Reading the scoreboard after round one: who is really winning?</h1>
+<p><small>Ahmed Moaz &middot; 14 October 2026</small></p>
+<p>The player on top after round one is not always the strongest player. In Draw and Guess, as in any online drawing game with friends that pays the drawer, one lucky word can move the standings as far as a whole round of quick guessing. Here the drawer earns according to how fast the table reads the drawing. Below is a worked scoreboard, and a way to read it.</p>
+<h2>A four-player round, scored</h2>
+<p>Take four players, A to D, at the default 80-second drawtime. Each of them draws once, which is how I am using "round one" here. These guess times are invented, then scored with the game's own functions.</p>
+<table><thead><tr><th>Player</th><th>Draw pay</th><th>Guess pay</th><th>Total</th></tr></thead><tbody><tr><td>A</td><td>360</td><td>875</td><td>1,235</td></tr><tr><td>B</td><td>250</td><td>700</td><td>950</td></tr><tr><td>C</td><td>0</td><td>570</td><td>570</td></tr><tr><td>D</td><td>450</td><td>95</td><td>545</td></tr></tbody></table>
+<p>A leads B by 285 points, and the two bottom places are 25 apart. Look at the middle column. C drew a picture nobody guessed and earned nothing for it, while D drew one that all three of the others read within 15 seconds and earned 450. The gap between those two drawings, 450 points, is bigger than A's whole lead.</p>
+<h2>Split every total in two</h2>
+<p>A total hides two different things. Guess pay shows who reads a drawing fast. Draw pay shows how readable the drawing and the word were, which is partly skill and partly luck. The drawer's pay is built from the speed points of each right guess, added up and shared over the other players, and a drawing nobody guesses pays nothing.</p>
+<p>So before you call a leader, subtract the draw pay and rank the guess pay. In the example that gives A with 875, B with 700, C with 570 and D with 95. D's total looks respectable only because of one drawing. If C had drawn as readably as D, C's 570 plus 450 would be 1,020, enough for second place.</p>
+<h2>Why second place costs so much</h2>
+<p>The same speed can score very differently by place. In turn 1, B guessed with 70 seconds left and took the full 450 points. In turn 4, B guessed with the same 70 seconds left but second, and took 250. Each right guess is cut by an order share of one over (1 plus 0.8 for every earlier right guess): 100% for the first, about 56% for the second, 38% for the third, and never below 20%.</p>
+<p>A player who is second by a hair every turn keeps only 56% of their speed points, which leaves 44% on the table.</p>
+<p>You can check the numbers at <a href="https://playboardit.com/play/draw-and-guess">a browser table for this</a>, which is the Draw and Guess table I build.</p>
+<h2>What to compare after round two</h2>
+<p>A lead of 285 is smaller than the 450-point swing of a single drawing, so round one settles very little. If a game is level or ends with the same top score for two players, the game announces a tie rather than naming a winner. The end-of-turn results show what each player gained and which one was the drawer, so you can keep the two columns on paper. Watch the guess pay column after the second round. If one player is still top of it, that player is probably the one to beat.</p>
+<p><em>Ahmed Moaz builds Boardit, a free browser game site.</em></p>
+</article>
+</main>
+<footer><p>Written by Ahmed Moaz.</p></footer>
+</body>
+</html>
