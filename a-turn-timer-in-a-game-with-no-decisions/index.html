@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A turn timer in a game with no decisions</title>
+<meta name="description" content="A turn timer exists to limit thinking. In a Snakes and Ladders game there is nothing to think about: you throw one die, the counter goes where the number s">
+<link rel="canonical" href="https://ahmed-kattan.github.io/fair-trivia/a-turn-timer-in-a-game-with-no-decisions/">
+<style>body{max-width:44rem;margin:2rem auto;padding:0 1rem;font:17px/1.65 -apple-system,Segoe UI,Roboto,sans-serif;color:#222;background:#fff}a{color:#0b5cad}h1{font-size:1.75rem;line-height:1.25}h2{font-size:1.25rem;margin-top:2rem}table{border-collapse:collapse;margin:1rem 0}td,th{border:1px solid #ccc;padding:.3rem .5rem;text-align:left}header,footer{font-size:.9rem;color:#666}code{background:#f3f3f3;padding:0 .2rem}</style>
+</head>
+<body>
+<header><a href="/fair-trivia/">Fair Trivia</a> &middot; by Ahmed Moaz &middot; <a href="/fair-trivia/about/">About</a></header>
+<main>
+<article>
+<h1>A turn timer in a game with no decisions</h1>
+<p><small>Ahmed Moaz &middot; 16 October 2026</small></p>
+<p>A turn timer exists to limit thinking. In a Snakes and Ladders game there is nothing to think about: you throw one die, the counter goes where the number says, and a snake or ladder does the rest. So why does every turn carry a 30-second clock?</p>
+<p>Because the clock is not there to hurry anyone. It is there for the person who is not at the screen.</p>
+<h2>What the clock actually does</h2>
+<p>When the 30 seconds run out, the clock throws the die for that player instead of skipping them. It uses the same code path as a throw they would have made themselves, with the same random source. A die thrown by the clock and a die thrown by the player come from the same random draw, so being timed out costs a player nothing in expectation. It costs only time.</p>
+<p>Skipping would be worse than it sounds. A counter that is never thrown never moves, so a player who steps away would be frozen at the start while everyone else sat through the full clock every round.</p>
+<p>The deadline is stamped with the server's clock and checked there. A browser with a fast clock cannot cut anyone's turn short.</p>
+<p>The Wikipedia entry on the game says any version can be modelled as an absorbing Markov chain, because the odds of moving between squares are fixed. That is another way of saying nobody has a choice to make.</p>
+<h2>Why thirty seconds, not ten</h2>
+<p>A throw is a single tap, so thirty seconds is a long time. That is on purpose. The clock sets the grace period for a human, someone answering a message or looking up from a conversation, and the pace of a normal game is far quicker than the limit: the page's own estimate works out at roughly 12 seconds per throw.</p>
+<p>The length also sets the price of walking away. With three run-outs in a row ending a player's game, a 10-second clock would remove someone after 30 seconds, which is shorter than a phone call. A 30-second clock gives 90 seconds, enough to answer the door.</p>
+<h2>The cost of a seat that never answers</h2>
+<p>Take a four-player table of Snakes and Ladders online with friends. In 100,000 simulated games, a four-seat game came to 75.45 throws, so each seat throws about 18.9 times. If one seat never answered and the clock had to throw for it each time, that seat would add up to 18.9 × 30 seconds, which is 9.4 minutes of waiting in an average game. That is an upper bound.</p>
+<p>The game page lists 10 to 25 minutes, and fifteen minutes spread over 75 throws is roughly 12 seconds per throw. A dead seat would add nearly ten minutes to that.</p>
+<p>So there is a second rule. After three clock run-outs in a row, the player leaves the table through the same path as Resign. Anything they do themselves, a throw or a vote, resets the count. A seat that is truly gone costs the table 3 × 30 = 90 seconds, once.</p>
+<p>The 30-second clock runs on every table of Snakes and Ladders on <a href="https://playboardit.com/play/snakes-and-ladders">Boardit</a>.</p>
+<p>Here is the design rule I take from it. In a multiplayer game with a pure-chance turn, the timer should never punish. It decides only how long the others wait, and for how many turns.</p>
+<p><em>Ahmed Moaz makes Boardit, a free browser game site.</em></p>
+</article>
+</main>
+<footer><p>Written by Ahmed Moaz.</p></footer>
+</body>
+</html>
