@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Custom words in a draw and guess game: the limits, the ten-word rule and how many you really need</title>
+<meta name="description" content="A host who adds a private list to a draw and guess game gets one text box and a few rules the box does not explain. I have read the code behind it, so here">
+<link rel="canonical" href="https://ahmed-kattan.github.io/fair-trivia/custom-words-in-a-draw-and-guess-game-the-limits-the-ten-word-rule-and-how-many-/">
+<link rel="alternate" type="application/rss+xml" title="Fair Trivia" href="https://ahmed-kattan.github.io/fair-trivia/feed.xml">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Custom words in a draw and guess game: the limits, the ten-word rule and how many you really need", "datePublished": "2026-11-03", "author": {"@type": "Person", "name": "Ahmed Moaz"}, "mainEntityOfPage": "https://ahmed-kattan.github.io/fair-trivia/custom-words-in-a-draw-and-guess-game-the-limits-the-ten-word-rule-and-how-many-/", "isPartOf": {"@type": "Blog", "name": "Fair Trivia", "url": "https://ahmed-kattan.github.io/fair-trivia/"}}</script>
+<style>table{border-collapse:collapse;margin:1rem 0}td,th{border:1px solid currentColor;padding:.3rem .5rem;text-align:left;opacity:.95}h1{line-height:1.25}h2{margin-top:2rem}img{max-width:100%}.more ul{padding-left:1.1rem}body{max-width:40rem;margin:2.5rem auto;padding:0 1.2rem;font:18px/1.7 Georgia,'Times New Roman',serif;color:#2b2622;background:#fbf8f2}a{color:#9a3b12}h1{font-size:2rem;font-weight:normal}h2{font-size:1.3rem;font-style:italic;font-weight:normal}header{text-align:center;letter-spacing:.08em;text-transform:uppercase;font-size:.8rem}footer,.meta{font-size:.85rem;color:#7a6f63}</style>
+</head>
+<body>
+<header><p><a href="/fair-trivia/">Fair Trivia</a></p><p><a href="/fair-trivia/about/">About</a> &middot; <a href="/fair-trivia/feed.xml">RSS</a></p></header>
+<main>
+<article>
+<h1>Custom words in a draw and guess game: the limits, the ten-word rule and how many you really need</h1>
+<p class="meta">Ahmed Moaz &middot; <time datetime="2026-11-03">3 November 2026</time></p>
+<p>A host who adds a private list to a draw and guess game gets one text box and a few rules the box does not explain. I have read the code behind it, so here is the full set: what the game keeps, what it throws away, and how long your list has to be before the same word comes round twice.</p>
+<h2>What can the host type?</h2>
+<p>One line of words, separated by commas. Each word can be one to 32 characters long, which is plenty for "the school bus" or "grandma's garden". The whole box is read up to 20,000 characters, and anything past that is ignored.</p>
+<p>The game then cleans the list. Extra spaces are tidied. Duplicates are dropped, and capital letters do not make a word different, so "Cat" and "cat" count once. An entry with no letter or digit in it is dropped. So is any word that the game's profanity filter would mask, because a masked word cannot be drawn. If you wonder why your list came out shorter than you typed, one of those is why.</p>
+<h2>Mixed in, or on their own?</h2>
+<p>There are two ways to use a list. By default the words are mixed into the built-in ones, so your private jokes appear among everyday words. The host can also choose to play from the list alone, but only if it holds at least ten different words after cleaning. With fewer, the game quietly mixes them in instead.</p>
+<p>Mixing in suits a table that wants a little personality. Playing on their own suits a theme: a team, a family reunion or a class.</p>
+<h2>How many words do you need?</h2>
+<p>This is the part that surprises people. Every word offered to a drawer is marked as used, not only the one they pick. If the host sets five choices, each drawing uses five words from the list.</p>
+<p>The number of drawings is the number of players times the number of rounds. So the words you need are players times rounds times the choices offered:</p>
+<ul><li>4 players, 2 rounds, 2 choices: 16 words</li><li>8 players, 3 rounds, 3 choices: 72 words</li><li>12 players, 2 rounds, 2 choices: 48 words</li><li>6 players, 3 rounds, 5 choices: 90 words</li></ul>
+<p>These counts assume the table stays the same size. A friend who sits down mid-game adds drawings, so leave a margin.</p>
+<p>If the list is shorter than that, the game does not stop. Once fewer fresh words remain than a drawer is offered, it deals from the whole list again, so repeats start to appear. For a short list, set the choices to two. That cuts the count by more than half against the default of five.</p>
+<h2>Who can see the list?</h2>
+<p>Nobody but the host, while it is being typed. The words stay hidden from the other players until someone is asked to draw one, and even then the drawer sees only their own offer. A word becomes public when the turn ends and the answer is revealed.</p>
+<p>That is why a list of in-jokes works. Players cannot read ahead.</p>
+<h2>Which words draw well?</h2>
+<p>Pick things a person can sketch in under a minute and a half, since the default clock is 100 seconds. Names of people work if the group knows them. Short phrases work if each half can be drawn on its own, like "ice cream", which the game shows as two groups of dashes. Words that are pure ideas, such as "tomorrow", mostly produce arguments.</p>
+<h2>Try a list in a real game</h2>
+<p><a href="https://playboardit.com/play/draw-and-guess">Boardit's Draw and Guess</a> is a free drawing game online with friends where the host pastes the list into the lobby before the game begins.</p>
+<h2>A checklist for the lobby</h2>
+<ol><li>Write at least ten words if the list is to stand alone.</li><li>Multiply players, rounds and choices to see how long it needs to be.</li><li>Lower the choices to two if the list is short.</li><li>Keep every word under 33 characters.</li></ol>
+<p><em>Ahmed Moaz builds Boardit, a free browser game site.</em></p>
+</article>
+<aside class="more"><h2>More on Fair Trivia</h2><ul><li><a href="/fair-trivia/video-game-trivia-questions-on-gaming-history-ten-milestones-from-1998-to-2023/">Video game trivia questions on gaming history: ten milestones from 1998 to 2023</a></li><li><a href="/fair-trivia/ludo-online-with-a-30-second-turn-a-thinking-routine-that-fits-the-clock/">Ludo online with a 30-second turn: a thinking routine that fits the clock</a></li><li><a href="/fair-trivia/trivia-questions-for-adults-at-a-dinner-party-general-knowledge-to-ask-between-c/">Trivia questions for adults at a dinner party: general knowledge to ask between courses</a></li></ul></aside>
+</main>
+<footer><p>Written by Ahmed Moaz.</p></footer>
+</body>
+</html>
